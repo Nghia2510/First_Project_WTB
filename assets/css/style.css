@@ -50,6 +50,9 @@ html{
     padding-left: 8px;
     padding-right: 8px;
 }
+.s-col-full{
+    width: 100%;
+}
 .col-ful{
     width: 100%;
 }
@@ -62,10 +65,17 @@ html{
 .mt-8{
     margin-top: 8px !important;
 }
+.mlr-8{
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+}
 .mt-16{
     margin-top: 16px !important;
 }
-
+.mlr-16{
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
 .btn{
     background-color: #000;
     color: #fff;
@@ -74,6 +84,7 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 .btn:hover{
     background-color: #ccc;
@@ -94,7 +105,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
-
+    
     
 }
 #nav, .subnav{
@@ -124,6 +135,7 @@ html{
     padding-left: 24px;
     padding-right: 24px;
     display: inline-block;
+    display: block;
 }
 
 #nav li:hover .subnav{
@@ -157,11 +169,16 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
-
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
-    
+   
 }
 
 #header .search-btn:hover{
@@ -169,7 +186,13 @@ html{
     cursor: pointer;
     
 }
-
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 24px;
@@ -184,14 +207,14 @@ html{
 
 #slider{
     position: relative;
-    background-image: url('/assets/img/slider/slider1.jpg') ;
+    /* background-image: url('/assets/img/slider/slider1.jpg') ; */
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     top: 0;
 
     margin-top: 46px;
-    padding-top: 50%;
+    /* padding-top: 50%; */
 }
 #slider .text-content{
     position: absolute;
@@ -204,7 +227,7 @@ html{
     /* right: 0;
     left: 0; */
     text-align: center;
-    
+    padding-bottom: 32px;
 }
 
 #slider .text-heading{
@@ -215,6 +238,7 @@ html{
 #slider .text-decription{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px, #000;
 }
 
 #content{
@@ -440,6 +464,13 @@ html{
 .contact-info i[class*="ti-"]{
     width: 30px;
     display: inline-block;
+}
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 .contact-form{
     font-size: 15px

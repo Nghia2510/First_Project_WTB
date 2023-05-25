@@ -1,0 +1,122 @@
+/* PC 1024px */
+@media (min-width: 64em){ 
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}/* Tablet & mobile 1023px */
+@media (max-width: 63.9375em){
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px 
+    }
+    .contact-info{
+        line-height: 2;
+    }
+    .socials-list{
+        font-size: 48px;
+    }
+    #footer .socials-list a{
+        margin: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;  
+    }
+}
+/*Tablet 740px 1023px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    #header .mobile-menu-btn{
+        display: none;
+    }
+    #content .content-section {
+        width: 100%;
+    }
+    #content .about-text{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .contact-content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+/*Mobile 739px*/
+@media (max-width: 46.1875em){
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 41px;
+        
+    }
+    /* .col{
+        float: none;
+    } */
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    /* .col-third{
+        width: 100%;
+    } */
+    #content .content-section{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 0 112px;
+    }
+    /* tu edit */
+    #content .about-text{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #content .member-name {
+        font-size: 15px;
+        /* margin: 15px; */
+    }
+    #content .member-img {
+        width: 60%;
+        /* margin-top: 15px; */
+        margin-bottom: 16px;
+        border-radius: 4px;
+    }
+    #content .member-item{
+        width: 100%;
+    }
+    .contact-content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+    .contact-submit-btn{
+        font-size: 16px;
+    }
+}
